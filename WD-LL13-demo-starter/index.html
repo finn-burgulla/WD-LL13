@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Cat Fact Fetcher</title>
+  <title>Random Quote Generator</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <h1>Random Cat Fact</h1>
-  <!-- This is where the cat fact will appear -->
-  <p id="cat-fact">Loading...</p>
-
+  <div class="container">
+    <h1>Random Quote Generator</h1>
+    <div id="quote-box" class="pretty-fact">
+      <p id="quote">Loading...</p>
+      <p id="author"></p>
+    </div>
+    <button id="new-quote">New Quote</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

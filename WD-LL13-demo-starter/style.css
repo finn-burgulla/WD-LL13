@@ -1,12 +1,87 @@
-/* Optional styling for the cat fact container */
-/* We'll add this class after fetch() works */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fafbfc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 90vw;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #222;
+  letter-spacing: 0.5px;
+}
 
 .pretty-fact {
   font-size: 1.2rem;
   color: #333;
   background-color: #f5f5f5;
   border-radius: 8px;
-  padding: 12px;
-  margin-top: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quote {
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+#author {
+  margin: 0;
+  text-align: right;
+  font-size: 1rem;
+  color: #888;
+}
+
+#new-quote {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+#new-quote:hover {
+  background: #444;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 18px 6vw 18px 6vw;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .pretty-fact {
+    font-size: 1rem;
+    padding: 14px 8px;
+  }
 }
